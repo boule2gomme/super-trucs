@@ -1,0 +1,10 @@
+[Unit]
+Description=Watch waybar configuration files for changes
+
+[Path]
+PathModified=%h/.config/waybar/config
+PathModified=%h/.config/waybar/style.css
+Unit=waybar-restart.service
+
+[Install]
+WantedBy=default.target

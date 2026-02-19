@@ -1,0 +1,7 @@
+[Unit]
+Description=Restart waybar service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl --user --no-block restart waybar.service
+ExecStart=notify-send "Restarted waybar service"
