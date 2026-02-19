@@ -1,0 +1,3 @@
+ignore-empty-password
+image=$HOME/.swaylock/pause.jpg
+no-unlock-indicator
