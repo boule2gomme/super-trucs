@@ -1,3 +1,13 @@
+input {
+    keyboard {
+        xkb {
+            layout "custom"
+        }
+    }
+    touchpad {
+        natural-scroll
+    }
+}
 layout {
     gaps 8
 }
@@ -16,10 +26,11 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // binds for running programs
-    Mod+Return hotkey-overlay-title="Open a Terminal" { spawn "ghostty"; }
-    Mod+Shift+Return hotkey-overlay-title="Open a Web Browser" { spawn "firefox"; }
+    Mod+Return hotkey-overlay-title="Open a terminal" { spawn "ghostty"; }
+    Mod+Shift+Return hotkey-overlay-title="Open a web browser" { spawn "firefox"; }
+    Mod+Shift+N hotkey-overlay-title="Open a file manager" { spawn "nautilus"; }
     Mod+Space hotkey-overlay-title="Run an application" { spawn "fuzzel"; }
-    Mod+Escape hotkey-overlay-title="Lock the Screen" { spawn "swaylock"; }
+    Mod+Escape hotkey-overlay-title="Lock the screen" { spawn "swaylock"; }
 
     // standard bind to toggle the screen reader (orca).
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
@@ -150,7 +161,7 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    
+
     // adjust window size
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }

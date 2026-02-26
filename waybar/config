@@ -6,7 +6,6 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "mode": "",
     "modules-left": [
         "clock"
     ],
@@ -18,14 +17,14 @@
         "bluetooth",
         "network",
         "battery",
-	"idle_inhibitor"
+        "idle_inhibitor"
     ],
     "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-          "activated": " ",
-          "deactivated": " "
-      },
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        },
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -62,14 +61,13 @@
         "tooltip-format-disconnected": "Error",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
         "tooltip-format-ethernet": "{ifname} 🖧",
-        "on-click-right": "ghostty -e nmtui"
+        "on-click-right": "nm-connection-editor"
     },
     "bluetooth": {
         "format-on": "󰂯",
         "format-off": "BT-off",
         "format-disabled": "󰂲",
         "format-connected-battery": "{device_battery_percentage}% 󰂯",
-        "format-alt": "{device_alias} 󰂯",
         "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\n{device_address}",
