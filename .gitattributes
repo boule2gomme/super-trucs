@@ -1,1 +1,2 @@
-images/*.jpg filter=lfs diff=lfs merge=lfs -text
+images/Wallpapers/*.jpg filter=lfs diff=lfs merge=lfs -text
+images/Lockpapers/*.jpg filter=lfs diff=lfs merge=lfs -text
